@@ -1,41 +1,37 @@
 {
-  "name": "zoom-slack-status-updater",
-  "version": "0.2.0",
-  "description": "Update your Slack status automatically when you join a Zoom meeting.",
-  "private": true,
-  "main": "./src/index.js",
-  "scripts": {
-    "coverage": "jest --coverage",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "postinstall": "node scripts/copyfile.js",
-    "start": "node .",
-    "test": "jest",
-    "watch": "nodemon ./src/index.js",
-    "watch-test": "jest --watch"
-  },
-  "keywords": [
-    "zoom",
-    "slack",
-    "slack status"
-  ],
-  "author": "Stefan Natter (https://natterstefan.me)",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "lodash.get": "^4.4.2",
-    "qs": "^6.9.4"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.3",
-    "all-contributors-cli": "^6.16.0",
-    "coveralls": "^3.1.0",
-    "jest": "^26.1.0",
-    "moxios": "^0.4.0",
-    "nodemon": "^2.0.4",
-    "prettier": "^2.0.5",
-    "supertest": "^4.0.2"
-  }
+    "name": "zoom-slack-status-updater",
+    "version": "1.0.0",
+    "description": "Update your Slack status automatically when you join a Zoom meeting.",
+    "private": true,
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node .",
+        "test": "jest"
+    },
+    "author": "Stefan Natter (https://natterstefan.me)",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.19.2",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3",
+        "lodash": "^4.17.21",
+        "qs": "^6.10.3"
+    },
+    "devDependencies": {
+        "axios": "^0.26.0",
+        "prettier": "^2.5.1"
+    },
+    "prettier": {
+        "printWidth": 120,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "overrides": [
+            {
+                "files": "package*.json",
+                "options": {
+                    "printWidth": 1000
+                }
+            }
+        ]
+    }
 }
