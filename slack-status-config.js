@@ -5,10 +5,7 @@ module.exports = [
         name: 'Tighten',
         // Filter by Zoom user email
         email: 'jacob@tighten.co',
-        /**
-         * Add this as an Enviroment variable on Vercel and in the local `.env` file
-         */
-        token: process.env.SLACK_TOKEN,
+        token: process.env.TIGHTEN_SLACK_TOKEN,
         /**
          * Zoom Verification Token
          *

@@ -82,7 +82,7 @@ Do not copy and paste your Slack app and other tokens into the
     name: 'Slack Workspace 1',
     token: process.env.SLACK_TOKEN,
     // see Step 6 for more details about how to obtain this token
-    zoomVerificationToken: process.env.VERIFICATION_TOKEN,
+    zoomVerificationToken: process.env.ZOOM_VERIFICATION_TOKEN,
     // other configuration settings
   }
 ```
